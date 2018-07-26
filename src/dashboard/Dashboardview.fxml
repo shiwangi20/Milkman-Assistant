@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardviewController">
+   <children>
+      <Label layoutX="-1.0" layoutY="-3.0" prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #334380;" text="                 DASHBOARD" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Circle layoutX="102.0" layoutY="328.0" radius="50.0" stroke="#4349eb" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.4777777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007662835249042145" />
+                  <Stop color="#060c79" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Label layoutX="50.0" layoutY="384.0" prefHeight="32.0" prefWidth="111.0" text="ROUTINE LOG" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="544.0" prefHeight="32.0" prefWidth="126.0" text="GENERATE BILL" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="218.0" prefHeight="32.0" prefWidth="111.0" text="BILL HISTORY" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="276.0" layoutY="384.0" prefHeight="32.0" prefWidth="151.0" text="CUSTOMER FINDER" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="6.0" />
+      <Separator layoutX="595.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="6.0" />
+      <Separator layoutX="4.0" prefHeight="0.0" prefWidth="592.0" />
+      <Separator layoutX="1.0" layoutY="597.0" prefHeight="0.0" prefWidth="592.0" />
+      <Separator layoutX="1.0" layoutY="88.0" prefHeight="0.0" prefWidth="592.0" />
+      <Separator layoutX="170.0" layoutY="63.0" prefHeight="3.0" prefWidth="234.0" style="-fx-background-color: white;" />
+      <Label layoutX="12.0" layoutY="224.0" prefHeight="32.0" prefWidth="216.0" text="CUSTOMER REGISTERATION" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="84.0" layoutX="66.0" layoutY="126.0" onMouseClicked="#doCustomerLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="52.0" layoutY="278.0" onMouseClicked="#doRoutineLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billing.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="94.0" layoutX="61.0" layoutY="437.0" onMouseClicked="#doGenerateBill" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billing.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="295.0" layoutY="278.0" onMouseClicked="#doCustomerFinder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@wishlist.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="80.0" layoutX="303.0" layoutY="120.0" onMouseClicked="#doBillHistory" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill%20history.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="277.0" layoutY="544.0" prefHeight="32.0" prefWidth="151.0" text="BILL COLLECTION" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="434.0" onMouseClicked="#doBillCollection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill%20collection.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="217.0" prefHeight="32.0" prefWidth="151.0" text="ROUTINE MANAGER" textFill="#060c79">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="111.0" layoutX="444.0" layoutY="115.0" onMouseClicked="#doRoutineManager" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@routine.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="94.0" layoutX="455.0" layoutY="253.0" onMouseClicked="#doAboutUs" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@about.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="routineManager.RoutineManagerViewController">
+   <children>
+      <Label prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #334380;" text="           ROUTINE MANAGER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="112.0" layoutY="64.0" prefHeight="4.0" prefWidth="356.0" style="-fx-background-color: white;" />
+      <Label layoutX="24.0" layoutY="168.0" text="MOBILE NUMBER" textFill="#04267c">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="207.0" layoutY="171.0" />
+      <ComboBox fx:id="month" layoutX="36.0" layoutY="107.0" prefHeight="31.0" prefWidth="104.0" promptText="MONTH" />
+      <ComboBox fx:id="year" layoutX="190.0" layoutY="107.0" prefHeight="31.0" prefWidth="104.0" promptText="YEAR" />
+      <Button layoutX="112.0" layoutY="229.0" mnemonicParsing="false" onAction="#doShow" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: green;" text="SHOW" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblshow" layoutX="25.0" layoutY="307.0" prefHeight="273.0" prefWidth="546.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="188.0" fitWidth="213.0" layoutX="368.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@managerroutinr.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-1.0" prefHeight="4.0" prefWidth="600.0" />
+      <Separator layoutX="1.0" layoutY="596.0" prefHeight="4.0" prefWidth="600.0" />
+      <Separator layoutX="-1.0" layoutY="84.0" prefHeight="4.0" prefWidth="600.0" />
+      <Separator orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
+      <Separator layoutX="595.0" layoutY="3.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
+      <Separator layoutX="-4.0" layoutY="151.0" prefHeight="4.0" prefWidth="356.0" />
+      <Separator layoutX="3.0" layoutY="214.0" prefHeight="4.0" prefWidth="356.0" />
+      <Separator layoutX="3.0" layoutY="291.0" prefHeight="4.0" prefWidth="594.0" />
+   </children>
+</AnchorPane>

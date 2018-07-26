@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(&quot;file:///F:/milkmanProject/src/login/watery.jpg&quot;); -fx-opacity: 0.7;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginViewController">
+   <children>
+      <Label layoutX="6.0" layoutY="6.0" prefHeight="484.0" prefWidth="590.0" style="-fx-background-color: #334380; -fx-opacity: 0.6;" text="Label" />
+      <ImageView fitHeight="448.0" fitWidth="590.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="399.0" prefHeight="89.0" prefWidth="194.0" text="ADMIN KEY" textFill="#01fffb">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutX="27.0" layoutY="470.0" prefWidth="200.0" />
+      <Button fx:id="btnProceed" layoutX="86.0" layoutY="512.0" mnemonicParsing="false" onAction="#doProceed" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #334380;" text="PROCEED" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="hyperRecover" layoutX="319.0" layoutY="515.0" onAction="#doRecover" style="-fx-background-color: #334380;" text="RECOVER KEY" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Hyperlink>
+      <PasswordField fx:id="txtpwd" layoutX="274.0" layoutY="431.0" prefHeight="40.0" prefWidth="246.0" />
+   </children>
+</AnchorPane>
